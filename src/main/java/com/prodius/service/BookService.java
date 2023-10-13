@@ -50,7 +50,7 @@ public class BookService {
     }
 
     public Book findByAuthor(final String author) {
-        return repository.findById(author).orElseThrow();
+        return repository.findByAuthor(author).orElseThrow();
     }
 
 }
